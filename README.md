@@ -9,8 +9,8 @@ Bash script for bypassing 401/403 responses primarily for bugbounty and testing 
 ```
 
 ## Features
-- Use 34 known Bypasses mechanism for 401/403 status codes using `curl`
-- GET POST PUT CONNECT PATCH OPTIONS HEAD TRACE TRACK methods
+- 34 known mechanisms to bypass 401/403 status codes
+- GET POST PUT CONNECT PATCH OPTIONS HEAD TRACE TRACK methods using `curl`
 
 ## Install
 ```bash
@@ -21,7 +21,7 @@ chmod +x bypass-403.sh
 ```
 
 ## Contributers
-Project forked from [iamj0ker](https://github.com/iamj0ker/bypass-403) for personal use.
+Project forked from [iamj0ker](https://github.com/iamj0ker/bypass-403) for personal use. There are no liabilities.
 
 ## Notable posts
 - https://blog.vidocsecurity.com/blog/401-and-403-bypass-how-to-do-it-right/
