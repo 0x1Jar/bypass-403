@@ -1,22 +1,27 @@
 # Bypass-403
-- A simple script just made for self use for bypassing 403
-- It can also be used to compare responses on verious conditions as shown in the below snap
-![](responses.png)
+Bash script for bypassing 401/403 responses primarily for bugbounty and testing purposes
 
-# Usage
-`./bypass-403.sh https://example.com admin`
+![POC](poc.jpg)
 
-`./bypass-403.sh website-here path-here`
+## Usage
+```bash
+./bypass-403.sh https://hackerone.com admin
+```
 
-# Features
-- Use 16 known Bypasses for 403 with the help of curl
+## Features
+- Use 34 known Bypasses mechanism for 401/403 status codes using `curl`
+- GET POST PUT CONNECT PATCH OPTIONS HEAD TRACE TRACK methods
 
-# Installation
-   * `git clone https://github.com/iamj0ker/bypass-403`
-   * `cd bypass-403`
-   * `chmod +x bypass-403.sh`
-   * `sudo apt install figlet`  - If you are unable to see the logo as in the screenshot
-   
-# Contributers
-  [remonsec](https://github.com/remonsec),
-  [manpreet](https://github.com/manpreet406)
+## Install
+```bash
+git clone https://github.com/iamj0ker/bypass-403
+cd bypass-403
+chmod +x bypass-403.sh
+./bypass-403.sh https://hostname.com directory2bypass
+```
+
+## Contributers
+Project forked from [iamj0ker](https://github.com/iamj0ker/bypass-403) for personal use.
+
+## Notable posts
+- https://blog.vidocsecurity.com/blog/401-and-403-bypass-how-to-do-it-right/
