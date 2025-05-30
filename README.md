@@ -5,10 +5,20 @@ Bash script for bypassing 401/403 responses primarily for bugbounty and testing 
 
 ## Usage
 ```bash
-./bypass-403.sh https://hackerone.com admin
+./bypass-403.sh <target_url> <path> [parallel_processes]
+```
+Arguments:
+  `<target_url>`      : The base URL of the target (e.g., https://hackerone.com)
+  `<path>`            : The path to fuzz (e.g., admin, without the leading slash if it's relative to the target_url)
+  `[parallel_processes]`: Optional. The number of parallel CPU processes to use with xargs. Defaults to 4.
+
+Example:
+```bash
+./bypass-403.sh https://example.com /admin 8
 ```
 
 ## Features
+- Parallel execution using `xargs` with configurable CPU processes.
 - 34 known mechanisms to bypass 401/403 status codes
 - GET POST PUT CONNECT PATCH OPTIONS HEAD TRACE TRACK methods using `curl`
 
